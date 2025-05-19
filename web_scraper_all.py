@@ -59,7 +59,7 @@ if response.status_code == 200:
     with open('laws.json', 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-    print("OK: Data saved to 'laws1.json'")
+    print("OK: Data saved to 'laws.json'")
 
 else:
     print(f'Failed to fetch main page. Status code: {response.status_code}')

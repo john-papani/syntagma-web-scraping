@@ -32,9 +32,9 @@ if response.status_code == 200:
             })
 
  # Save to JSON file
-    with open('laws.json', 'w', encoding='utf-8') as f:
+    with open('laws_only_in_titles, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-    print("OK: Data saved to 'laws.json'")
+    print("OK: Data saved to 'laws_only_in_titles")
 else:
     print(f'Failed to fetch the page. Status code: {response.status_code}')
